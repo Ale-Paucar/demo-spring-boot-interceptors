@@ -27,7 +27,7 @@ public class LoadingTimeInterceptor implements HandlerInterceptor {
         logger.info("Loading Time Interceptor: preHandle() entrando..."+method.getMethod().getName());
         long start = System.currentTimeMillis();
         request.setAttribute("start", start);
-        //simulamos un delay
+        //simulamos un delay ------
         int delay= new Random().nextInt(500);
         Thread.sleep(delay);
 /*
